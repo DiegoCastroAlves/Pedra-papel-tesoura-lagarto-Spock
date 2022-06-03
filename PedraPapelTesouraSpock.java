@@ -1,9 +1,7 @@
-package pedra_papel_tesoura_spock;
-
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class PedraPapelTesouraSpock {
 	
 	static Scanner console = new Scanner(System.in);
 	static Random sorteador = new Random();
@@ -35,7 +33,7 @@ public class Main {
 		System.out.println("[2] Tesoura");
 		System.out.println("[3] Lagarto");
 		System.out.println("[4] Spock");
-		System.out.print("Opção: ");
+		System.out.print("OpÃ§Ã£o: ");
 		
 		return console.nextInt();		
 	}
@@ -53,7 +51,7 @@ public class Main {
 		
 	
 		if (REGRAS_DO_JOGO[jogador][computador] == GANHOU) {
-			System.out.println("Parabéns você ganhou");
+			System.out.println("ParabÃ©ns vocÃª ganhou");
 		} else if (REGRAS_DO_JOGO[jogador][computador] == EMPATOU) {
 			System.out.println("Empate");
 		} else if (REGRAS_DO_JOGO[jogador][computador] == PERDEU) {
@@ -67,7 +65,7 @@ public class Main {
 		System.out.println("[1] Jogar");
 		System.out.println("[2] SAIR");
 		
-		System.out.print("Opção: ");
+		System.out.print("OpÃ§Ã£o: ");
 		int opcao = console.nextInt();
 		System.out.println("");
 		
